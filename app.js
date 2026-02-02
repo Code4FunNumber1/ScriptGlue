@@ -38,6 +38,12 @@ liElement1.innerText = luckyNumber;
 ulElement.appendChild(liElement0);
 ulElement.appendChild(liElement1);
 
+for (const fact of facts){
+    const liElement = document.createElement("li");
+    liElement.innerText = fact.toString();
+    ulElement.appendChild(liElement);
+}
+
 // parent
 const body = document.getElementById("content");
 
