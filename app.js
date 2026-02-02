@@ -30,13 +30,13 @@ const facts = [name, luckyNumber]
 
 // new child
 const ulElement = document.createElement("ul");
-
-const liElement0 = document.createElement("li");
-liElement0.innerText = name
-const liElement1 = document.createElement("li");
-liElement1.innerText = luckyNumber;
-ulElement.appendChild(liElement0);
-ulElement.appendChild(liElement1);
+ulElement.innerHTML = "Facts"
+// const liElement0 = document.createElement("li");
+// liElement0.innerText = name
+// const liElement1 = document.createElement("li");
+// liElement1.innerText = luckyNumber;
+// ulElement.appendChild(liElement0);
+// ulElement.appendChild(liElement1);
 
 for (const fact of facts){
     const liElement = document.createElement("li");
